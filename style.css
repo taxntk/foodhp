@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+body {
+    background-color: rgba(196, 234, 246, 0.3);
+    color: #000;
+    font-family: 'Noto Serif JP', serif;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 400px;
+    z-index: 1;
+    width: 100%;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+/* ここから */
+/* header */
+.header-visual {
+    background: url(images/イセエビ.jpg) no-repeat center / cover;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+/* container */
+/* nav */
+.agenda {
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+}
+
+.agenda h1 {
+    writing-mode: vertical-lr;
+}
+
+.agenda h1 a {
+    font-size: 40px;
+}
+
+.agenda img {
+    width: 40px;
+    margin: 0 50px 0 40px;
+}
+
+.agenda ul {
+    writing-mode: vertical-lr;
+}
+
+.agenda a {
+    display: block;
+    margin-right: 30px;
+}
+
+.outline {
+    writing-mode: vertical-lr;
+    width: 70px;
+    height: 194px;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(224, 240, 152, 0.5);
+    border-radius: 6px;
+    position: fixed;
+    top: 650px;
+    left: 55px;
+}
+
+.outline a {
+    padding: 24px 16px;
+    border: 3px solid;
+    font-weight: bold
+}
+
+@media (max-width: 768px) {
+    .header-visual {
+        background: url(images/寿司2.jpg) no-repeat center / cover;
+        margin-bottom: 80px;
+    }
+
+    .agenda h1 a {
+        color: #333;
+    }
+
+    .agenda ul a {
+        color: #333;
+    }
+
+    .outline {
+        display: none;
+    }
+
+}
+
+/* section news */
+.newsbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 180px;
+}
+
+.news-ttl {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.news-ttl h4 {
+    writing-mode: vertical-rl;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.news-ttl h2 {
+    writing-mode: vertical-lr;
+    font-size: 36px;
+}
+
+.ttl-content dl {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 80px 100px 0 0;
+
+}
+
+.ttl-content dt {
+    writing-mode: vertical-rl;
+    padding: 15px 30px 15px 5px;
+    border-right: 1px solid #000;
+    font-size: 12px;
+    line-height: 1rem;
+}
+
+.ttl-content dd {
+    writing-mode: vertical-lr;
+    padding: 15px 0 15px 30px;
+    line-height: 1.5rem;
+}
+
+.ttl-content dd:last-of-type {
+    border-left: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+    .newsbox {
+        margin-bottom: 80px;
+    }
+
+    .news-ttl h2 {
+        font-size: 28px;
+    }
+
+    .ttl-content dl {
+        padding: 20px 30px 0 0;
+
+    }
+
+    .ttl-content dt {
+        padding: 15px 12px 15px 5px;
+    }
+
+    .ttl-content dd {
+        padding: 15px 0 15px 12px;
+    }
+
+    dt:first-of-type,
+    dd:first-of-type {
+        display: none;
+    }
+
+    dt:last-of-type,
+    dd:last-of-type {
+        display: none;
+    }
+
+    dd:nth-of-type(4n) {
+        border-left: 1px solid #000;
+    }
+}
+
+/* section create */
+
+.createbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-bottom: 180px;
+    padding: 0 16px 0 20px;
+    margin-bottom: 712px;
+}
+
+.create-ttl {
+    flex-direction: column-reverse;
+}
+
+.create-ttl h2 {
+    padding: 0 6px;
+    flex: auto;
+}
+
+.create-ttl h4 {
+    padding: 20px 17px 25px 0;
+}
+
+.txt-content {
+    margin: 107px 16px 0;
+    max-width: 536px;
+    height: auto;
+    position: relative;
+}
+
+.txt-content img {
+    width: 100%;
+    border-radius: 7% 30% 53% 22% / 68% 83% 22% 20%;
+}
+
+.txt-content img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(97 237 119 / 50%);
+    color: #fff;
+    position: absolute;
+    top: -66px;
+    right: -182px;
+    border-radius: 70% 8%;
+
+}
+
+.box p {
+    letter-spacing: 0.1em;
+    line-height: 23px;
+}
+
+@media (max-width: 1000px) {
+    .box {
+        top: -80px;
+        right: 92px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .createbox {
+        margin-bottom: 90px;
+    }
+
+    .txt-content {
+        max-width: 635px;
+        margin-top: 75px;
+    }
+
+    .create-ttl h2 {
+        font-size: 24px;
+        flex: auto;
+    }
+
+    .create-ttl h4 {
+        display: none;
+    }
+
+    .box {
+        height: 100px;
+        width: 65%;
+    }
+
+    .box p {
+        font-size: 14px;
+        letter-spacing: 0em;
+        line-height: 18px;
+    }
+
+}
+
+/* section science */
+.food-box {
+    flex-direction: row;
+}
+
+.left {
+    max-width: 536px;
+
+}
+
+.left-box {
+    background-color: rgb(222 134 243 / 50%);
+    bottom: 0;
+    left: 48%;
+}
+
+@media (max-width: 768px) {
+    .left-box {
+        bottom: -5%;
+        left: 39%;
+    }
+
+}
+
+/* nav map */
+
+iframe {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* footer */
+
+.footer {
+    box-sizing: border-box;
+    background-color: #000;
+    padding: 10px 80px 10px 30px;
+}
+
+.footer-outline {
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 230px;
+}
+
+.footer-outline img {
+    width: 40px;
+}
+
+.footer-outline ul {
+    writing-mode: vertical-lr;
+}
+
+.footer-outline li {
+    margin-right: 30px;
+}
+
+.footer-outline a {
+    display: block;
+}
+
+.footer-address a {
+    font-size: 14px;
+    margin: 0 70px;
+    line-height: 26px;
+}
+
+address {
+    font-style: normal;
+}
+
+.footer-outline p {
+    writing-mode: vertical-lr;
+    flex: auto;
+}
+
+.footer-outline p a {
+    font-size: 14px;
+}
+
+.footer-text {
+    display: block;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 20px 40px;
+    }
+
+    .footer-outline a {
+        font-size: 14px;
+    }
+
+    .footer-outline li {
+        margin-right: 16px;
+    }
+
+    .footer-address a {
+        margin: 0 20px;
+    }
+}
