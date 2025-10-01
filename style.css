@@ -206,7 +206,7 @@ li {
     justify-content: space-around;
     margin-bottom: 180px;
     padding: 0 16px 0 20px;
-    margin-bottom: 712px;
+    margin-bottom: 400px;
 }
 
 .create-ttl {
@@ -403,4 +403,5 @@ address {
     .footer-address a {
         margin: 0 20px;
     }
+
 }
